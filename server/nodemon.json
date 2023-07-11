@@ -1,0 +1,6 @@
+{
+  "watch": ["./src", "./bin"],
+  "ext": ".mjs,.js,.pug,.css",
+  "ignore": ["./node_modules"],
+  "exec": "node ./src/index.mjs"
+}

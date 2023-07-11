@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        * {
+            font-family: sans-serif;
+
+        }
+
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        textarea {
+            text-align: left;
+            overflow: auto;
+            padding: 10px;
+        }
+
+        textarea:invalid {
+            border: 2px dashed red;
+        }
+
+        textarea:valid {
+            border: 2px solid lime;
+        }
+
+        button {
+            border-radius: 4px;
+            border: none;
+            background-color: #dedede;
+            font-size: 1.15em;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #cccccc;
+        }
+
+        #output {
+            resize: none;
+            width: 100%;
+        }
+
+        #input-area {
+            width: 100%;
+            height: 90px;
+            resize: none;
+        }
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 16em;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Javascript Code-Runner</h1>
+
+        <form id="form">
+            <button id="btn-reset">Reset</button>
+            <button type="submit">Run</button>
+            <div>
+                <p>😉 TIP: Try run <b>console.log("Hello world")</b></p>
+                <textarea type="text" name="command" id="input-area" required
+                    placeholder="Write some anything in Javascript syntax"></textarea>
+            </div>
+        </form><br>
+
+        </form>
+
+        <textarea id="output" name="output-code" readonly rows="6" cols="70">
+    </textarea>
+    </div>
+
+</body>
+<script src="/index.js" type="text/javascript"></script>
+
+</html>
